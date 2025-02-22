@@ -441,7 +441,7 @@ end
 
 -- Create button
 local Button = AutoTab:CreateButton({ 
-   Name = "Kill All (Works with Murder)", 
+   Name = "Kill All as murder", 
    Callback = function()
        killAllPlayers() -- Calls the function when pressed
    end,
@@ -594,7 +594,7 @@ end
 
 -- Przełącznik do włączania/wyłączania ESP
 local Toggle = espTab:CreateToggle({
-    Name = "Toggle ESP",
+    Name = "Gun Drop esp (working on)",
     CurrentValue = false,
     Flag = "Toggle1",  -- Flag do zapisywania stanu
     Callback = function(Value)
@@ -798,7 +798,7 @@ end
 
 -- Fling Murderer Button
 local flingMurdererButton = funTab:CreateButton({
-    Name = "Fling Murderer",
+    Name = "Fling Murderer  (doesnt't work with blocky characters)",
     Callback = function()
         -- Loop through all players to find Murderer
         for _, player in pairs(Players:GetPlayers()) do
@@ -828,7 +828,7 @@ local flingMurdererButton = funTab:CreateButton({
 
 -- Fling Sheriff Button
 local flingSheriffButton = funTab:CreateButton({
-    Name = "Fling Sheriff",
+    Name = "Fling Sheriff (doesnt't work with blocky characters)",
     Callback = function()
         -- Loop through all players to find Sheriff
         for _, player in pairs(Players:GetPlayers()) do
